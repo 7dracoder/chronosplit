@@ -61,14 +61,17 @@ export async function generateTimeline(params: {
     return templateTimeline(params);
   }
 
-  const { object } = await generateObject({
-    model: anthropic("claude-sonnet-4-5-20250929"),
-    schema: timelineSchema,
-    system: loadAgentPrompt(),
-    prompt: buildUserMessage(params),
-  });
-
-  return object;
+  try {
+    const { object } = await generateObject({
+      model: anthropic("claude-sonnet-4-5-20250929"),
+      schema: timelineSchema,
+      system: loadAgentPrompt(),
+      prompt: buildUserMessage(params),
+    });
+    return object;
+  } catch {
+    return templateTimeline(params);
+  }
 }
 
 export function streamTimeline(
