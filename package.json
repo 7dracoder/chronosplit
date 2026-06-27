@@ -1,0 +1,43 @@
+{
+  "name": "chronosplit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.2.12",
+    "@ai-sdk/react": "^1.2.12",
+    "@auth0/nextjs-auth0": "^4.6.0",
+    "@react-email/components": "^0.0.36",
+    "@react-email/render": "^1.1.2",
+    "@sentry/nextjs": "^9.30.0",
+    "@supabase/supabase-js": "^2.49.8",
+    "ai": "^4.3.16",
+    "canvas-confetti": "^1.9.4",
+    "next": "15.3.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-qr-code": "^2.2.0",
+    "resend": "^4.5.1",
+    "zod": "^3.25.51"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.106.0",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.8",
+    "pg": "^8.22.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
