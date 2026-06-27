@@ -51,7 +51,7 @@ export default function WallPage() {
               <p className="mt-3 text-lg font-bold text-foreground/60">
                 No timelines yet! Be the first to split yours!
               </p>
-              <a href="/auth/login" className="btn-primary mt-6 inline-block">
+              <a href="/auth/login?returnTo=/questions" className="btn-primary mt-6 inline-block">
                 🚀 Create yours!
               </a>
             </div>

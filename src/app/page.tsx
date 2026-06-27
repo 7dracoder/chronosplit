@@ -1,7 +1,16 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { QrJoin } from "@/components/qr-join";
+import { auth0 } from "@/lib/auth0";
 
-export default function HomePage() {
+const LOGIN_URL = "/auth/login?returnTo=/questions";
+
+export default async function HomePage() {
+  const session = await auth0.getSession();
+  if (session?.user) {
+    redirect("/questions");
+  }
+
   return (
     <main className="relative min-h-screen overflow-hidden">
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center gap-12 px-6 py-16 lg:flex-row lg:gap-16 lg:text-left">
@@ -21,7 +30,7 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-            <a href="/auth/login" className="btn-primary text-center">
+            <a href={LOGIN_URL} className="btn-primary text-center">
               🚀 Let&apos;s goooo!
             </a>
             <Link href="/wall" className="btn-secondary text-center">
