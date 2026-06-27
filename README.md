@@ -253,7 +253,7 @@ npx tsx scripts/migrate-supabase.mts
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) locally, or visit the live app at **[https://chronosplit.vercel.app](https://chronosplit.vercel.app)**.
 
 ### 5. Verify integrations
 
