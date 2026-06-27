@@ -4,6 +4,7 @@
 </p>
 
 <p align="center">
+  <a href="https://chronosplit.vercel.app"><img src="https://img.shields.io/badge/Live-chronosplit.vercel.app-ff6bcb?style=flat-square" alt="Live Demo" /></a>
   <a href="https://github.com/7dracoder/chronosplit"><img src="https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js" alt="Next.js 15" /></a>
   <a href="https://github.com/7dracoder/chronosplit"><img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
   <a href="https://github.com/7dracoder/chronosplit"><img src="https://img.shields.io/badge/Tailwind-4-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
